@@ -1,1 +1,8 @@
-<p>main works!</p>
+<div *ngIf="text" class="list-group">
+        <a *ngFor="let text of text" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between"><h5 class="mb-1">{{text.title}}</h5></div>
+        <p class="mb-1">{{text.content}}</p>
+    </a>
+    </div>
+
+
